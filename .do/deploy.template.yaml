@@ -1,0 +1,19 @@
+spec:
+ name: do-app-with-supabase
+ functions:
+  - envs:
+    - key: REACT_APP_SUPABASE_URL
+      scope: RUN_AND_BUILD_TIME
+      type: SECRET
+    - key: REACT_APP_SUPABASE_ANON_KEY
+      scope: RUN_AND_BUILD_TIME
+      type: SECRET
+    git:
+      branch: main
+      repo_clone_url: https://github.com/digitalocean/do-app-with-supabase.git
+    build_command: "npm install @supabase/supabase-js"
+    run_command: "npm start"
+    name: do-app-with-supabase
+    routes:
+    - path: /
+    source_dir: /
