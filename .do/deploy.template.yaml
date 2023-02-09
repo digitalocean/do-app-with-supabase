@@ -8,10 +8,8 @@ spec:
   - envs:
     - key: REACT_APP_SUPABASE_URL
       scope: RUN_AND_BUILD_TIME
-      type: SECRET
     - key: REACT_APP_SUPABASE_ANON_KEY
       scope: RUN_AND_BUILD_TIME
-      type: SECRET
     github:
       branch: main
       deploy_on_push: true
