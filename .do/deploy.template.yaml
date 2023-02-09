@@ -14,6 +14,7 @@ spec:
       branch: main
       deploy_on_push: true
       repo: digitalocean/do-app-with-supabase
+    build_command: "npm run build"
     run_command: "npm start"
     name: do-app-with-supabase
     routes:

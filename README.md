@@ -213,7 +213,7 @@ create trigger before_delete_user
 Once we've set up the schema and enabled the appropriate extensions and triggers we can deploy our app. This is as easy as a few clicks of a button (no really click the button below).
 
 <a href="https://cloud.digitalocean.com/apps/new?repo=https://github.com/digitalocean/do-app-with-supabase/tree/main" target="_blank">
-<img src="https://www.deploytodo.com/do-btn-blue.svg"/>
+<img src="https://www.deploytodo.com/do-btn-blue.svg" alt="Deploy to DO"/>
 </a>
 
 When you get to the `Environment Variables` section input the data with your information, confirm the next sections are correct (Region, etc )
