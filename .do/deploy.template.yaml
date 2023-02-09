@@ -1,7 +1,7 @@
 spec:
  name: do-app-with-supabase
  domains:
-    - domain: todo.devreltim.io
+    - domain: users.devreltim.io
       type: PRIMARY
       zone: devreltim.io
  services:
