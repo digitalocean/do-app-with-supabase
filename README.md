@@ -232,7 +232,7 @@ Once the app launches you'll see the sign in page. Entering an email will send a
 
 ### Optional Step - Domain Configuration
 
-App Platform can automatically manage your domain for you and create a CNAME that points your domain to the DO provided domain (sub-domain on `ondigitalocean.app`) for your application. You can either do this by modifying the [`deploy.template.yaml`](./.do/deploy.template.yaml) file provided with your domain information or manually as explained through this [documentation](https://docs.digitalocean.com/products/app-platform/how-to/manage-domains/).gc
+App Platform can automatically manage your domain for you and create a CNAME that points your domain to the DO provided domain (sub-domain on `ondigitalocean.app`) for your application. You can either do this by modifying the [`deploy.template.yaml`](./.do/deploy.template.yaml) file provided with your domain information or manually as explained through this [documentation](https://docs.digitalocean.com/products/app-platform/how-to/manage-domains/).
 
 ## Conclusion
 
