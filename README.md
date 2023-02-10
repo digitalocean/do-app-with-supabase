@@ -239,9 +239,3 @@ App Platform can automatically manage your domain for you and create a CNAME tha
 In this blog we should you how easy it is to deploy a React app on [App Platform ](https://www.digitalocean.com/products/app-platform) with a self-hosted Supabase instance. This allows you to focus on what is important, creating an amazing application for your end users and leaving the management of the underlying infrastructure and application deployment to DigitalOcean.
 
 All that's needed now is your great idea!! Enjoy and Happy creating :)
-
-## Resources
-
-* [GitHub Repo](https://github.com/digitalocean/do-app-with-supabase)
-* [Hosting Supabase on DigitalOcean](https://docs.digitalocean.com/developer-center/hosting-supabase-on-digitalocean/)
-* [Supabase Documentation](https://supabase.com/docs)
