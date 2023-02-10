@@ -1,5 +1,9 @@
 spec:
  name: do-app-with-supabase
+#  domains:
+#     - domain: app.example.com
+#       type: PRIMARY
+#       zone: example.com
  domains:
     - domain: users.devreltim.io
       type: PRIMARY

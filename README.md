@@ -12,7 +12,7 @@ The focus of this repository is to deploy the following resources:
 
 </div>
 
-The application is a simple user management app [(taken from the Supabase web app tutorials)](https://supabase.com/docs/guides/getting-started/tutorials/with-react) written in React.
+The application is a simple user management app ([taken from the Supabase web app tutorials](https://supabase.com/docs/guides/getting-started/tutorials/with-react)) written in React.
 
 With our final architecture looking like so:
 
@@ -24,7 +24,7 @@ With our final architecture looking like so:
 
 ## Database Schema Set Up
 
-Before deploying the application we need to set up the database schema. Copy the following SQL and paste it in the SQL Editor within your Supabase instance.
+Before deploying the application we need to set up the database schema. Copy the following SQL and paste it in the SQL Editor within your Supabase instance (Click the little arrowhead to expand and see the code).
 
 <details>
 <summary>User Management SQL</summary>
@@ -101,7 +101,7 @@ First thing to do is enable the `http` extension for the `extension` schema in t
 
 </div>
 
- Then, define the following SQL functions in the SQL Editor to delete storage objects via the API. _N.B._ Replace the variables `<YOURPROJECTURL>` and `<YOURSERVICEROLEKEY>` with your information.
+ Then, define the following SQL functions in the SQL Editor to delete storage objects via the API. _N.B._ Replace the variables `<YOUR_SUPABASE_URL>` and `<YOUR_SERVICE_ROLE_KEY>` with your information.
 
 <details>
 <summary>Delete Object Storage</summary>
@@ -113,8 +113,8 @@ language 'plpgsql'
 security definer
 as $$
 declare
-  project_url varchar := '<YOURPROJECTURL>';
-  service_role_key varchar := '<YOURSERVICEROLEKEY>'; --  full access needed
+  project_url varchar := '<YOUR_SUPABASE_URL>';
+  service_role_key varchar := '<YOUR_SERVICE_ROLE_KEY>'; --  full access needed
   url varchar := project_url||'/storage/v1/object/'||bucket||'/'||object;
 begin
   select
@@ -216,4 +216,28 @@ Once we've set up the schema and enabled the appropriate extensions and triggers
 <img src="https://www.deploytodo.com/do-btn-blue.svg" alt="Deploy to DO"/>
 </a>
 
-When you get to the `Environment Variables` section input the data with your information, confirm the next sections are correct (Region, etc )
+When you get to the `Environment Variables` section input the data with your information, confirm the Information in the next sections are what you wish and correct (Plan, Name, Region, Project, etc), and once at the Review section click the `Create Resources` button at the bottom of the page.
+
+![Environment Variables](./assets/Environment-Variables.png "Environment Variables")
+![Review](./assets/Review.png "Review")
+
+Once the application has been successfully deployed you'll be able to access it via the domain generated for you, or the domain you specified before creation (more info in the next [section](#optional-step---domain-configuration)).
+
+![Launch App](./assets/Launch-App.png "Launch App")
+
+Once the app launches you'll see the sign in page. Entering an email will send a magic link to your inbox and following the link will allow you update your profile and upload a profile pic. You'll see all of this information within your Supabase instance under the appropriate sections (Table Editor, Database, Authentication, Storage etc.)
+
+### Optional Step - Domain Configuration
+
+App Platform can automatically manage your domain for you and create a CNAME that points your domain to the DO provided domain (sub-domain on `ondigitalocean.app`) for your application. You can either do this by modifying the [`deploy.template.yaml`](./.do/deploy.template.yaml) file provided with your domain information or manually as explained through this [documentation](https://docs.digitalocean.com/products/app-platform/how-to/manage-domains/).
+
+
+## Conclusion
+
+
+
+## Resources
+
+* [GitHub Repo](https://github.com/digitalocean/do-app-with-supabase)
+* [Hosting Supabase on DigitalOcean](https://docs.digitalocean.com/developer-center/hosting-supabase-on-digitalocean/)
+* [Supabase Documentation](https://supabase.com/docs)
