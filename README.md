@@ -227,14 +227,18 @@ Once the application has been successfully deployed you'll be able to access it 
 
 Once the app launches you'll see the sign in page. Entering an email will send a magic link to your inbox and following the link will allow you update your profile and upload a profile pic. You'll see all of this information within your Supabase instance under the appropriate sections (Table Editor, Database, Authentication, Storage etc.)
 
+![Sign In Page](./assets/Sign-In-Page.png "Sign In Page")
+![Profile](./assets/Profile.png "Profile")
+
 ### Optional Step - Domain Configuration
 
-App Platform can automatically manage your domain for you and create a CNAME that points your domain to the DO provided domain (sub-domain on `ondigitalocean.app`) for your application. You can either do this by modifying the [`deploy.template.yaml`](./.do/deploy.template.yaml) file provided with your domain information or manually as explained through this [documentation](https://docs.digitalocean.com/products/app-platform/how-to/manage-domains/).
-
+App Platform can automatically manage your domain for you and create a CNAME that points your domain to the DO provided domain (sub-domain on `ondigitalocean.app`) for your application. You can either do this by modifying the [`deploy.template.yaml`](./.do/deploy.template.yaml) file provided with your domain information or manually as explained through this [documentation](https://docs.digitalocean.com/products/app-platform/how-to/manage-domains/).gc
 
 ## Conclusion
 
+In this blog we should you how easy it is to deploy a React app on [App Platform ](https://www.digitalocean.com/products/app-platform) with a self-hosted Supabase instance. This allows you to focus on what is important, creating an amazing application for your end users and leaving the management of the underlying infrastructure and application deployment to DigitalOcean.
 
+All that's needed now is your great idea!! Enjoy and Happy creating :)
 
 ## Resources
 

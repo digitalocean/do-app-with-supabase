@@ -4,10 +4,6 @@ spec:
 #     - domain: app.example.com
 #       type: PRIMARY
 #       zone: example.com
- domains:
-    - domain: users.devreltim.io
-      type: PRIMARY
-      zone: devreltim.io
  services:
   - envs:
     - key: REACT_APP_SUPABASE_URL
