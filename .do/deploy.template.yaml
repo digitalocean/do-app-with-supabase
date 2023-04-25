@@ -12,7 +12,7 @@ spec:
       scope: RUN_AND_BUILD_TIME
     git:
       branch: main
-      repo_clone_url: digitalocean/do-app-with-supabase
+      repo_clone_url: https://github.com/digitalocean/do-app-with-supabase
     build_command: "npm run build"
     run_command: "npm start"
     name: do-app-with-supabase
