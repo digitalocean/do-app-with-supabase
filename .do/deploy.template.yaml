@@ -10,10 +10,10 @@ spec:
       scope: RUN_AND_BUILD_TIME
     - key: REACT_APP_SUPABASE_ANON_KEY
       scope: RUN_AND_BUILD_TIME
-    github:
+    git:
       branch: main
       deploy_on_push: true
-      repo: digitalocean/do-app-with-supabase
+      repo_clone_url: digitalocean/do-app-with-supabase
     build_command: "npm run build"
     run_command: "npm start"
     name: do-app-with-supabase
